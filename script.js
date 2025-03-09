@@ -9,7 +9,7 @@ let text = document.querySelector('.text');
 // Function to update UI based on counter value
 function updateUI(x) {
      if(x===0){
-         text.innerHTML=  `<p class="para" style="color:brown ; font-size:20px ; margin:20px 20px ">Error : cannor go below 0 </p>`
+         text.innerHTML=  `<p class="para" style="color:brown ; font-size:20px ; margin:20px 20px ">Error : cannot go below 0 </p>`
          clear.style.display='none'
          decrement.disabled= true
         }else{
@@ -22,7 +22,7 @@ function updateUI(x) {
 // Increment button
 increment.addEventListener('click', () => {
      let x= parseInt((counter.textContent) || 0)
-      x=x+1
+     x=x+1
      counter.textContent=x
      updateUI(x)
 });
